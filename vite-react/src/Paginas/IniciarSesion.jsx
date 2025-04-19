@@ -13,8 +13,8 @@ function IniciarSesion() {
       <button className="btn-regresar" onClick={() => navigate('/')}>← Regresar</button>
       <form className="formulario" onSubmit={manejarInicioSesion}>
         <h2>Iniciar Sesión</h2>
-        <input type="email" placeholder="Correo electrónico" required />
-        <input type="password" placeholder="Contraseña" required />
+        <input type="email" placeholder="Correo electrónico"/>
+        <input type="password" placeholder="Contraseña"/>
         <button className="boton" type="submit">Ingresar</button>
       </form>
     </div>

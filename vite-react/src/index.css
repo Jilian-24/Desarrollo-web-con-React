@@ -65,37 +65,52 @@ nav .activo {
   flex-wrap: wrap;
 }
 .imagenes-tres img {
-  width: 100px;
+  width: 300px;
   height: auto;
 }
 
 .ventajas {
   padding: 2rem;
 }
-.grid-ventajas {
+.ventajas-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding-top: 1rem;
+}
+
+.ventajas-izquierda {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
+  flex: 2;
   gap: 1rem;
 }
-.bloque-derecha {
-  grid-column: span 3;
+
+.ventajas-derecha {
+  flex: 1;
   background: #ddd;
   text-align: center;
   padding: 1rem;
   font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 200px;
 }
 
 .contenedor-formulario {
-  max-width: 400px;
-  margin: 2rem auto;
-  padding: 1rem;
+  max-width: 500px;
+  margin: 4rem auto;
+  padding: 5rem;
   border: 1px solid #ccc;
   border-radius: 8px;
   background: #f9f9f9;
+  
 }
 .btn-regresar {
   background: none;
   border: none;
+  color: #0056b3;
   font-size: 1rem;
   cursor: pointer;
   margin-bottom: 1rem;
@@ -103,9 +118,9 @@ nav .activo {
 .formulario input {
   display: block;
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #b4a9a9;
   border-radius: 4px;
 }
 .formulario button {
