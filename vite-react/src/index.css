@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #000;
+}
+
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #f2f2f2;
+}
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+}
+nav .activo {
+  color: white;
+  background: #007BFF;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+.boton {
+  margin-left: 10px;
+  padding: 8px 12px;
+  background: #007BFF;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.boton:hover {
+  background: #0056b3;
+}
+.telefono {
+  margin-left: 15px;
+}
+
+.inicio {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  align-items: center;
+  gap: 2rem;
+}
+.texto {
+  flex: 1;
+  min-width: 300px;
+}
+.video {
+  flex: 1;
+  min-width: 300px;
+}
+
+.imagenes-tres {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 2rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.imagenes-tres img {
+  width: 100px;
+  height: auto;
+}
+
+.ventajas {
+  padding: 2rem;
+}
+.grid-ventajas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+.bloque-derecha {
+  grid-column: span 3;
+  background: #ddd;
+  text-align: center;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+.contenedor-formulario {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #f9f9f9;
+}
+.btn-regresar {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+.formulario input {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.formulario button {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .inicio {
+    flex-direction: column;
+  }
+  .imagenes-tres {
+    flex-direction: column;
+    align-items: center;
+  }
+  .grid-ventajas {
+    grid-template-columns: 1fr;
+  }
+  .encabezado {
+    flex-direction: column;
+    text-align: center;
+  }
+  nav {
+    margin: 1rem 0;
+  }
+}
